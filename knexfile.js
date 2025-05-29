@@ -20,6 +20,7 @@ export default {
   staging: {
     client: 'pg',
     connection: process.env.DATABASE_URL, // Use DATABASE_URL for staging too
+    ssl: { rejectUnauthorized: false }, 
     pool: {
       min: 2,
       max: 10,
@@ -34,6 +35,7 @@ export default {
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL, // Use DATABASE_URL for production too
+    ssl: { rejectUnauthorized: false }, 
     pool: {
       min: 2,
       max: 20,                         // Higher pool max for production load
