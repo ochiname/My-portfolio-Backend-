@@ -415,5 +415,5 @@ export const updatePics = async (id, data) => {
      .where({ id })
      .update(data)
      .returning("*");
-   return picupdate.length ? pic : null;
+   return picupdate.length ? picupdate : null;
 };
