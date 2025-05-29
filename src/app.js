@@ -14,8 +14,8 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:3001','http://localhost:3000','http://127.0.0.1:3000','https://unugor-ochiname-portfolio.netlify.app'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    origin: ['http://localhost:3001','http://localhost:3000','http://127.0.0.1:3000', 'https://my-portfolio-backend-node-js.onrender.com', 'https://unugor-ochiname-portfolio.netlify.app'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  
 // CORS (General API requests)
 
     allowedHeaders: ['Content-Type', 'Authorization'],
